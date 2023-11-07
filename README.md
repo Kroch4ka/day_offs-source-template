@@ -1,39 +1,27 @@
-# DayOffs::Source::Template
+# DayOffs Source Template
 
-TODO: Delete this and the text below, and describe your gem
+This repo is a template for building [day_offs] sources.
+DaysOff is a plugin system that provides a common interface for day offs sources.
+Every source is defined into it's own gem. Use this repository to create your own source gem.
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/day_offs/source/template`. To experiment with that code, run `bin/console` for an interactive prompt.
+### Setting up and cloning the repo
+You can start using GitHub's [Use this template][use-template] button.
+![Use this template](https://docs.github.com/assets/images/help/repository/use-this-template-button.png)
+This will create a repository based off from this template.
+After that is created, you can clone it locally to start working on it.
 
-## Installation
+### Refactoring the template
 
-TODO: Replace `UPDATE_WITH_YOUR_GEM_NAME_PRIOR_TO_RELEASE_TO_RUBYGEMS_ORG` with your gem name right after releasing it to RubyGems.org. Please do not do it earlier due to security reasons. Alternatively, replace this section with instructions to install your gem from git if you don't plan to release to RubyGems.org.
+The next step is for you to find and replace all the "parametrised" names in this template and change them to make it unique.
+First of all, you should decide on the name of your source.
+The current convention (which is by no means mandatory) is to call source gems as `days_off-<source_name>`.
 
-Install the gem and add to the application's Gemfile by executing:
+In this template repository, the placeholder for your chosen source name is `MySource` (`my_source`).
+So once you decide on the final name you want to use you should update all occurrences of `MySource` and all files with `my_source` in their name with the new name you chose.
 
-    $ bundle add UPDATE_WITH_YOUR_GEM_NAME_PRIOR_TO_RELEASE_TO_RUBYGEMS_ORG
+### Main implementation
 
-If bundler is not being used to manage dependencies, install the gem by executing:
+The bulk of the implementation is in the `DayOffs::Sources::MySource` class.
 
-    $ gem install UPDATE_WITH_YOUR_GEM_NAME_PRIOR_TO_RELEASE_TO_RUBYGEMS_ORG
-
-## Usage
-
-TODO: Write usage instructions here
-
-## Development
-
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/day_offs-source-template. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/[USERNAME]/day_offs-source-template/blob/master/CODE_OF_CONDUCT.md).
-
-## License
-
-The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-
-## Code of Conduct
-
-Everyone interacting in the DayOffs::Source::Template project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/day_offs-source-template/blob/master/CODE_OF_CONDUCT.md).
+[use-template]: https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template
+[day_offs]: https://github.com/Kroch4ka/day_offs
