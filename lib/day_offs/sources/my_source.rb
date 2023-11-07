@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require "day_offs"
+
 module DayOffs::Sources
   class MySource < Base
     with_countries :RU # add countries supported by your source

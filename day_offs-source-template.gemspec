@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative "lib/day_offs/my_source/my_source"
+require_relative "lib/day_offs/my_source/version"
 
 Gem::Specification.new do |spec|
   spec.name = "day_offs-my_source"
